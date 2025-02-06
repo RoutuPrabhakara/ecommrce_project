@@ -1,0 +1,15 @@
+.banner{
+    background-color: #000;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: red !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100px;
+    padding: 10px !important;
+}
+.banner img{
+    min-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
