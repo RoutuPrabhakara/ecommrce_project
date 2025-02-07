@@ -4,7 +4,7 @@ import './Style.css'
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg  bg-success text-white">
+      <nav className="navbar navbar-expand-lg  bg-light border-bottom text-dark">
   <div className="container-fluid">
    <a href="/"><img src="https://img.freepik.com/premium-vector/shopping-markets-logo_27153-46.jpg?w=740" alt="Logo"  className='images' /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@ function Header() {
       
       </ul>
      <div className="d-flex gap-3">
-     <a href="/Cart" className='btn btn-light'><i className="bi bi-bag"></i></a>
-     <a href="/Login" className='btn btn-warning'>Login </a>
+     <a href="/Cart" className='btn btn-dark'><i className="bi bi-bag"></i></a>
+     <a href="/Login" className='btn btn-dark'>Login </a>
      </div>
       
     </div>

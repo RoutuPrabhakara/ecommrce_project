@@ -8,7 +8,7 @@ function Products() {
     <div className='p-3 p-md-5 container-fluid'>
         <div className='d-flex align-items-center justify-content-between'>
             <h1 className="fs-4">FEATURED PRODUCTS</h1>
-            <a href="" className='fs-5 text-danger nav-link'>View more <i class="bi bi-chevron-right"></i></a>
+            <a href="/products" className='fs-5 text-danger nav-link'>View more <i class="bi bi-chevron-right"></i></a>
         </div>
         <hr />
         <br />
@@ -23,7 +23,7 @@ function Products() {
                           <div className="card-body">
                           <p className="fs-6 fw-bold">{item.productName}</p>
                           <p className="fs-5 fw-bold text-danger">{item.price}</p>
-                          <a href="" className='btn btn-outline-dark w-100'>View Details <i class="bi bi-chevron-right"></i></a>
+                          <a href={`/products/Details/${item.id}`} className='btn btn-outline-dark w-100'>View Details <i class="bi bi-chevron-right"></i></a>
                           </div>
                         </div>
                     </div>

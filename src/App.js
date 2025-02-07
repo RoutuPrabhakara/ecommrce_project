@@ -11,6 +11,8 @@ import Feature from './Componets/Feature/Feature'
 import Login from './Pages/Login'
 import Signup from './Pages/Signup'
 import Cart from './Componets/Cart/Cart'
+import Products from './Componets/Products/Product'
+import ProductDetails from './Componets/ProductsDetails/ProductDetails'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Route path='/About' element={<About/>}/>
       <Route path='/Categories' element={<Categories/>}/>
       <Route path='/Feature' element={<Feature/>}/>
+      <Route path='/products' element={<Products/>}/>
+      <Route path='/products/Details/:id' element={<ProductDetails/>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Signup/>}/>
       <Route path='/Cart' element={<Cart/>}/>

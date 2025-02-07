@@ -7,7 +7,7 @@ function Banner() {
     <div className='banner'>
         <Carousel>
             <Carousel.Item>
-                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="" />
+                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="Logo" />
                 <Carousel.Caption>
                     <h1 className='display-5 fw-bold text-dark'>Free Delivery on <br /> Orders over $1000</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, nisi?</p>
@@ -16,7 +16,7 @@ function Banner() {
             </Carousel.Item>
 
             <Carousel.Item>
-                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="" />
+                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="Logo" />
                 <Carousel.Caption>
                     <h1 className='display-5 fw-bold text-dark'>Free Delivery on <br /> Orders over $1000</h1>
                     {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, nisi?</p> */}
@@ -26,7 +26,7 @@ function Banner() {
 
 
             <Carousel.Item>
-                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="" />
+                <img src="https://cs-everything-fashion.myshopify.com/cdn/shop/files/ev7-home49-slideshow1_1944x.png?v=1665452117" className='w-100' alt="Logo" />
                 <Carousel.Caption>
                     <h1 className='display-5 fw-bold text-dark'>Free Delivery on <br /> Orders over $1000</h1>
                     {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, nisi?</p> */}
