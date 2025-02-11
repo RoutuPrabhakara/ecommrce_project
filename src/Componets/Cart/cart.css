@@ -1,0 +1,10 @@
+table{
+    width: 100%;
+}
+td, th{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+td img{
+    width: 70px;
+}

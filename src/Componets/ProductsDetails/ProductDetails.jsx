@@ -7,11 +7,11 @@ function ProductDetails() {
     const {id} = useParams();
     const [productData, setProductdata] = useState({});
     const [quantity, setQuantity] = useState(1);
+    const [cartData, setCartData] = useState([]);
 
     const incrementQuantity = () =>{
         setQuantity(quantity+1);
     }
-
 
     const decrementQuantity = () =>{
        if(quantity>1){
@@ -29,8 +29,17 @@ function ProductDetails() {
             
         }
         findproduct(); //calling function
+
+        //getting data from local storage and coverting into json to object again
+        setCartData(JSON.parse(localStorage.getItem('cartdata')) || []);
     })
 
+    const Carthandler = () =>{
+      localStorage.setItem("cartdata", JSON.stringify([...cartData, productData])); //key and value we need to pass as a parameters
+    }
+
+    //JSON.stringify(object) => used to convert any object to json_object formate
+    //JSON.parse(json_object) => used to convert any json_object to object formate
    
   return (
     <div className='container-fluid p-3 p-md-5'>
@@ -74,7 +83,7 @@ function ProductDetails() {
                 <button className="btn-dark btn" onClick={incrementQuantity}><i class="bi bi-plus-lg"></i></button>
               </div>
               <div className="d-flex gap-2 mt-3">
-                <button className="btn btn-dark w-100 p-3 rounded-1"><i class="bi bi-bag"></i> Add to cart</button>
+                <button className="btn btn-dark w-100 p-3 rounded-1" onClick={Carthandler}><i class="bi bi-bag"></i> Add to cart</button>
                 <button className="btn btn-danger w-100 p-3 rounded-1">Buy now <i class="bi bi-arrow-right"></i></button>
               </div>
             </div>
