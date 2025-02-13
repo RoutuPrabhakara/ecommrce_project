@@ -19,7 +19,7 @@ const submitHandler = async(e)=>{
     await axios.post('http://localhost:5000/SignUp',formdata)
     .then((response)=>{
       console.log('Data is connected',response.data)
-      alert('Registration Successfull')
+      alert(`<img src="https://codeconvey.com/wp-content/uploads/2020/06/registration-successful-message-html.png.webp" alt="Logo">`)
       SetFormData({ name: '', email: '', password: '' });
     })
   } catch (error) {
