@@ -16,7 +16,7 @@ const submitHandler = async(e)=>{
   e.preventDefault();
   try {
    
-    await axios.post('http://localhost:5000/SignUp',formsdata)
+    await axios.post('https://ecommerse-login.onrender.com/SignUp',formsdata)
     .then((response)=>{
       console.log('Data is connected',response.data)
       alert('Registration Succesful')
